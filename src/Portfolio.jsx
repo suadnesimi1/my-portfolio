@@ -56,7 +56,7 @@ export default function Portfolio() {
               Suad Nesimi
             </motion.h1>
 
-             {/* About Me */}
+            {/* About Me */}
             <motion.section
               className={`rounded-2xl p-6 border transition duration-300 shadow-xl hover:shadow-[0_15px_40px_rgba(59,130,246,0.3)] max-w-xs cursor-pointer ${darkMode ? "bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 hover:border-blue-500" : "bg-white border-gray-300 hover:border-blue-500"}`}
               whileHover={{ scale: 1.05 }}
@@ -69,14 +69,39 @@ export default function Portfolio() {
               </p>
             </motion.section>
 
-            <div className="space-y-3 text-sm">
-              <div className="flex items-center space-x-2"><span>📧</span> suadnesimi12@gmail.com</div>
-              <div className="flex items-center space-x-2"><FaPhone /> +389 70 123 456</div>
-              <div className="flex items-center space-x-2"><FaGithub /> GitHub</div>
-              <div className="flex items-center space-x-2"><FaFacebook /> Facebook</div>
-              <div className="flex items-center space-x-2"><FaInstagram /> Instagram</div>
-              <div className="flex items-center space-x-2"><FaLinkedin /> LinkedIn</div>
-            </div>
+            {/* Contact Me */}
+            <motion.section
+              className={`rounded-2xl p-6 border transition duration-300 shadow-xl hover:shadow-[0_15px_40px_rgba(59,130,246,0.3)] max-w-xs cursor-pointer ${darkMode ? "bg-gradient-to-br from-gray-800 to-gray-900 border-gray-700 hover:border-blue-500" : "bg-white border-gray-300 hover:border-blue-500"}`}
+              whileHover={{ scale: 1.05 }}
+            >
+              <h2 className="text-xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-300 drop-shadow-lg">
+                Contact Me
+              </h2>
+              <form className="space-y-3 text-sm">
+                <div className="flex items-center space-x-2 text-gray-400 dark:text-gray-300">
+                  <span>📧</span> <a href="mailto:suadnesimi12@gmail.com" className="hover:underline">suadnesimi12@gmail.com</a>
+                </div>
+                <div className="flex items-center space-x-2 text-gray-400 dark:text-gray-300">
+                  <FaPhone /> <span>+389 70 123 456</span>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <FaGithub className="text-xl hover:text-[#333]" />
+                  <a href="https://github.com/suadnesimi1" target="_blank" rel="noopener noreferrer" className="hover:underline">GitHub</a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <FaFacebook className="text-xl hover:text-[#1877F2]" />
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="hover:underline">Facebook</a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <FaInstagram className="text-xl hover:text-[#E1306C]" />
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:underline">Instagram</a>
+                </div>
+                <div className="flex items-center space-x-2">
+                  <FaLinkedin className="text-xl hover:text-[#0077b5]" />
+                  <a href="https://linkedin.com/in/suadnesimi" target="_blank" rel="noopener noreferrer" className="hover:underline">LinkedIn</a>
+                </div>
+              </form>
+            </motion.section>
           </div>
 
           <div className="md:col-span-3 space-y-20">
@@ -105,7 +130,7 @@ export default function Portfolio() {
               </div>
             </section>
 
-           {/* Projects */}
+            {/* Projects */}
             <section className={`transition duration-300 ${darkMode ? "bg-gray-800" : "bg-white"} p-6 rounded-xl shadow-lg`}>
               <h2 className="text-3xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-500 to-teal-300">Projects</h2>
               <div className="mb-10 h-2 rounded-full shadow-md bg-gradient-to-r from-gray-500 to-gray-700 dark:from-gray-700 dark:to-gray-500"></div>
