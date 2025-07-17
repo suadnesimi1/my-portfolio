@@ -1,15 +1,21 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.61db772c.css",
-    "main.js": "/my-portfolio/static/js/main.c753bef3.js",
+    "main.css": "/my-portfolio/static/css/main.0c423805.css",
+    "main.js": "/my-portfolio/static/js/main.f6ae9e15.js",
     "static/js/453.438d9e50.chunk.js": "/my-portfolio/static/js/453.438d9e50.chunk.js",
+    "static/media/profile.png": "/my-portfolio/static/media/profile.32c514223e2e5904454a.png",
+    "static/media/swissshore-logo.png": "/my-portfolio/static/media/swissshore-logo.8c250330bcc274a03200.png",
+    "static/media/hotelkey-logo.png": "/my-portfolio/static/media/hotelkey-logo.061eeda7e3923a28331b.png",
+    "static/media/ecolog.png": "/my-portfolio/static/media/ecolog.643a89f829f4cbc9229f.png",
+    "static/media/inntempo-logo.png": "/my-portfolio/static/media/inntempo-logo.90918c298908248b3c86.png",
+    "static/media/technoperia-logo.png": "/my-portfolio/static/media/technoperia-logo.97771e6f1f0ea8d559e5.png",
     "index.html": "/my-portfolio/index.html",
-    "main.61db772c.css.map": "/my-portfolio/static/css/main.61db772c.css.map",
-    "main.c753bef3.js.map": "/my-portfolio/static/js/main.c753bef3.js.map",
+    "main.0c423805.css.map": "/my-portfolio/static/css/main.0c423805.css.map",
+    "main.f6ae9e15.js.map": "/my-portfolio/static/js/main.f6ae9e15.js.map",
     "453.438d9e50.chunk.js.map": "/my-portfolio/static/js/453.438d9e50.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.61db772c.css",
-    "static/js/main.c753bef3.js"
+    "static/css/main.0c423805.css",
+    "static/js/main.f6ae9e15.js"
   ]
 }
