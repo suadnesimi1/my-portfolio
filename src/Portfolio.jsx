@@ -49,7 +49,7 @@ export default function Portfolio() {
               whileHover={{ scale: 1.1 }}
               className="text-5xl font-extrabold bg-gradient-to-r from-[#3B82F6] via-[#06B6D4] to-[#22C55E] bg-clip-text text-transparent drop-shadow-lg hover:drop-shadow-[0_8px_24px_rgba(6,182,212,0.6)] transition duration-300 cursor-pointer"
             >
-              Mr. Suad Nesimi
+            Suad Nesimi
             </motion.h1>
             {/* About Me */}
             <motion.section
