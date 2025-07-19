@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 import {
   FaJava, FaReact,FaPhp, FaHtml5, FaCss3Alt, FaDocker, FaAws, FaGitAlt,
   FaGithub, FaFacebook, FaInstagram, FaLinkedin, FaPhone,
-  FaUserGraduate, FaUniversity, FaGraduationCap,FaJsSquare,FaEye,FaApple, FaAndroid
+  FaUserGraduate, FaUniversity, FaGraduationCap,FaJsSquare,FaEye,FaApple, FaAndroid,FaCode ,FaPlug 
 } from "react-icons/fa";
 import {
-  SiMongodb, SiMysql, SiSpring, SiJavascript, SiPhp, SiPostman, SiJira,SiExpo, SiSqlite,SiPython,SiTailwindcss 
+  SiMongodb, SiMysql, SiSpring, SiJavascript, SiPhp, SiPostman, SiJira,SiExpo, SiSqlite,SiPython,SiTailwindcss
 } from "react-icons/si";
 import profileImg from './profile.png';
 import inntempoLogo from './inntempo-logo.png';
@@ -15,6 +15,9 @@ import hotelKeyLogo from './hotelkey-logo.png';
 import swissshoreLogo from './swissshore-logo.png';
 import ecologLogo from './ecolog.png';
 import { MdEmail } from "react-icons/md";
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import PortfolioPDF from './PortfolioPDF';
+
 
 
 const iconColors = [
@@ -53,6 +56,20 @@ const projects = [
       "Timekeeper Mobile is the companion app to the cloud-based Timekeeper platform, designed for both iOS and Android. Built with the same principles of real-time accuracy and operational efficiency, the mobile app empowers hospitality teams to manage attendance, shifts, and rosters on the go. Whether clocking in via RFID, fingerprint, or PIN, staff can access their schedules anytime, while managers stay informed through live data and built-in notifications. The app eliminates manual tracking and ensures seamless synchronization with the web platform, delivering a fully mobile, cross-platform solution for modern workforce management.",
    techIcons: [FaReact, SiExpo, FaApple, FaAndroid, SiMysql, SiSqlite],
     github: "https://timekeeper-cloud.com/mobileApp.html"
+  },
+    {
+    title: "Hospitality Consulting & Venture Capital",
+    description:
+      "This project features custom-built software applications and intelligent algorithms designed to support every phase of operations—including planning, development, project management, supply chain coordination, pre-opening strategies, finance, I.T., marketing, sales, human resources, training, sustainability, and asset management—ensuring seamless integration and data-driven decision-making across all departments.",
+   techIcons: [FaCode,FaJava,FaJsSquare,FaHtml5, FaCss3Alt, SiMysql],
+    github: "http://inntempo.com/inntempo-hospitality-consulting-venture-capital/"
+  },
+  {
+    title: "ClearSky - Weather Forecasting App",
+    description:
+      "ClearSky is a lightweight and responsive weather forecasting web application designed to provide users with real-time weather updates for any location worldwide. Developed using pure JavaScript, HTML, and CSS, the app fetches live data from a weather API and displays key information such as temperature, humidity, wind speed, and weather conditions through a clean and intuitive interface. With a focus on performance and usability, ClearSky delivers accurate forecasts with a sleek, modern design—making it both functional and visually appealing across devices.",
+   techIcons: [FaJsSquare,FaHtml5, FaCss3Alt,FaPlug],
+    github: "https://github.com/suadnesimi1/wether-app"
   },
   {
     title: "Personal Portfolio Website",
@@ -478,6 +495,21 @@ const projects = [
           </div>
         </div>
       </div>
+      {/* Footer */}
+      <footer className={`mt-20 py-6 border-t text-center text-sm ${darkMode ? "border-gray-700 text-gray-400" : "border-gray-300 text-gray-600"}`}>
+        <p>© {new Date().getFullYear()} Suad Nesimi. All rights reserved.</p>
+        
+        <PDFDownloadLink
+  document={<PortfolioPDF projects={projects} />}
+  fileName="Suad-Nesimi-Portfolio.pdf"
+  className="inline-block px-4 py-2 mt-4 text-sm font-medium text-white bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl shadow-md hover:shadow-lg hover:from-blue-600 hover:to-cyan-600 transition-all duration-300"
+>
+  {({ loading }) => (loading ? 'Preparing PDF...' : 'Download PDF Version')}
+</PDFDownloadLink>
+
+      </footer>
+
     </div>
+    
   );
 }
