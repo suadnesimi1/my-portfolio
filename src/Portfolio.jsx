@@ -502,6 +502,7 @@ const projects = [
           </div>
         </div>
       </div>
+      
       {/* Footer */}
       <footer className={`mt-20 py-6 border-t text-center text-sm ${darkMode ? "border-gray-700 text-gray-400" : "border-gray-300 text-gray-600"}`}>
         <p>© {new Date().getFullYear()} Suad Nesimi. All rights reserved.</p>
